@@ -1,9 +1,11 @@
 // TODO: Fix the return statement so that it renders an `h1` heading tag that introduces the creator
-import React from 'react';
+import React, { useState } from "react";
 import './web.css'
+import Description from './About';
 //import myProject from './project';
 
-export default function myProject({work, setWork}){
+export default function Navbar({work, setWork}){
+  const[about, setAbout] = useState(false)
   return (
     <div>
     {work ? (
@@ -17,9 +19,10 @@ export default function myProject({work, setWork}){
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" id= "Profile" >About</a>
+          <Description about = {about} setAbout ={setAbout}/>
               <a class="nav-link" href='#Works' onClick={()=>setWork(!work)}>Works</a>
               <a class="nav-link" href ="#Contact">Contact</a>
+        
             </div>
           </div>
         </div>
@@ -82,8 +85,8 @@ export default function myProject({work, setWork}){
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" id= "Profile" >About</a>
-        <a class="nav-link" href='#Works' onClick={()=>setWork(!work)}>Works</a>
+        <Description about = {about} setAbout ={setAbout}/>
+       <a class="nav-link" href='#Works' onClick={()=>setWork(!work)}>Works</a>
         <a class="nav-link" href ="#Contact">Contact</a>
       </div>
     </div>
