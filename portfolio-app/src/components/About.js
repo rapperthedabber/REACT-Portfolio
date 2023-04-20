@@ -1,12 +1,15 @@
 import React from "react";
-
+import dayjs from 'dayjs'
 export default function Description({about, setAbout}){
+    
     return (
         <div>
         {about ? (
             <>
               <a class="nav-link" href='#About' onClick ={()=> setAbout(!about)}>About</a>
-              <h1>Hello</h1>
+              <div>
+                
+              </div>
         </> )
     : ( <a class="nav-link" href='#About' onClick = {()=> setAbout(!about)}>About</a> )
     }

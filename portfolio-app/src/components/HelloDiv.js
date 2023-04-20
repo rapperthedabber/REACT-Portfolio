@@ -9,6 +9,7 @@ export default function Navbar({work, setWork}){
   return (
     <div>
     {work ? (
+     
       <div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -27,9 +28,10 @@ export default function Navbar({work, setWork}){
           </div>
         </div>
       </nav>
+    <container class ="myWorks">
   <div id = 'Works'>
   <div class="container">
-    <div class="card-deck">
+    <div  id ="myWorks"class="card-deck">
       <div class="col-12 col-lg-3 col-md-6">
         <div class="card text-center">
           <div class="card-body">
@@ -40,7 +42,7 @@ export default function Navbar({work, setWork}){
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-3 col-md-6">
+      <div id = "myWorks"class="col-12 col-lg-3 col-md-6">
         <div class="card text-center">
           <div class="card-body">
             <h5 class="card-title2">Dictionary Website</h5>
@@ -50,7 +52,7 @@ export default function Navbar({work, setWork}){
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-3 col-md-6">
+      <div id ="myWorks"class="col-12 col-lg-3 col-md-6">
         <div class="card text-center">
           <div class="card-body">
             <h5 class="card-title3">Shape Generator</h5>
@@ -73,7 +75,30 @@ export default function Navbar({work, setWork}){
     </div>
   </div>
 </div>
-</div>)
+
+</container>
+<footer>
+<container class = "aboutMe">
+<div  id = "Contact"class="card" style={{width: '50rem'}}>
+  <div class="card-body">
+    <h5 class="card-title">Jerry Dong</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">About Me</h6>
+    <p class="card-text">I am a fullstack JavaScript web developer and have experience with HTML,CSS,
+    JavaScript, React, Node.js, express, API, MongoDB, MySQL, and GraphQL. I am currently living in Philadelphia, Pennslyvania
+    and I am currently looking for a remote position or a onsite position in Philadelphia. For more Information, please contact me here </p>
+    <a href="#" class="card-link">Email: Jamesharold1738@gmail.com</a>
+    <a href="#" class="card-link">Phone: 215-607-4658</a>
+  </div>
+</div>
+<img  id = "Jerry"src="https://user-images.githubusercontent.com/116526260/233241846-409dd838-81f5-414b-900b-8512a271c6ff.jpg"/>
+</container>
+</footer>
+</div>
+
+
+
+
+)
 : (
   <>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -87,12 +112,30 @@ export default function Navbar({work, setWork}){
         <a class="nav-link active" aria-current="page" href="#">Home</a>
         <Description about = {about} setAbout ={setAbout}/>
        <a class="nav-link" href='#Works' onClick={()=>setWork(!work)}>Works</a>
-        <a class="nav-link" href ="#Contact">Contact</a>
       </div>
     </div>
   </div>
 </nav>
 <h1 id ='welcome'>Welcome to my Page</h1>
+<div >
+  <container class = "aboutMe">
+<div  id = "Contact"class="card" style={{width: '50rem'}}>
+  <div class="card-body">
+    <h5 class="card-title">Jerry Dong</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">About Me</h6>
+    <p class="card-text">I am a fullstack JavaScript web developer and have experience with HTML,CSS,
+    JavaScript, React, Node.js, express, API, MongoDB, MySQL, and GraphQL. I am currently living in Philadelphia, Pennslyvania
+    and I am currently looking for a remote position or a onsite position in Philadelphia. For more Information, please contact me here </p>
+    <a href="#" class="card-link">Email: Jamesharold1738@gmail.com</a>
+    <a href="#" class="card-link">Phone: 215-607-4658</a>
+  </div>
+ 
+</div >
+
+<img  class = "center-block"id = "Jerry"src="https://user-images.githubusercontent.com/116526260/233241846-409dd838-81f5-414b-900b-8512a271c6ff.jpg"/>
+</container>
+</div>
+
 </>
 )
 }
