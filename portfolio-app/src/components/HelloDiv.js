@@ -19,7 +19,6 @@ export default function Navbar({work, setWork}){
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
           <Description about = {about} setAbout ={setAbout}/>
               <a class="nav-link" href='#Works' onClick={()=>setWork(!work)}>Works</a>
               <a class="nav-link" href ="#Contact">Contact</a>
@@ -109,7 +108,6 @@ export default function Navbar({work, setWork}){
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
         <Description about = {about} setAbout ={setAbout}/>
        <a class="nav-link" href='#Works' onClick={()=>setWork(!work)}>Works</a>
       </div>
