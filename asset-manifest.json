@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/rapperthedabber/REACT-Portfolio.git/static/css/main.96b6d961.css",
-    "main.js": "/rapperthedabber/REACT-Portfolio.git/static/js/main.30798cfa.js",
-    "index.html": "/rapperthedabber/REACT-Portfolio.git/index.html",
-    "main.96b6d961.css.map": "/rapperthedabber/REACT-Portfolio.git/static/css/main.96b6d961.css.map",
-    "main.30798cfa.js.map": "/rapperthedabber/REACT-Portfolio.git/static/js/main.30798cfa.js.map"
+    "main.css": "/REACT-Portfolio/static/css/main.96b6d961.css",
+    "main.js": "/REACT-Portfolio/static/js/main.30798cfa.js",
+    "index.html": "/REACT-Portfolio/index.html",
+    "main.96b6d961.css.map": "/REACT-Portfolio/static/css/main.96b6d961.css.map",
+    "main.30798cfa.js.map": "/REACT-Portfolio/static/js/main.30798cfa.js.map"
   },
   "entrypoints": [
     "static/css/main.96b6d961.css",
