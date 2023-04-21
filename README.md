@@ -1,8 +1,5 @@
 # REACT-Portfolio
 
-![image](https://user-images.githubusercontent.com/116526260/226284966-3467d693-b604-4421-8d4c-527f792acd00.png)
-
-
  # Description 
 
   This is a portfolio wesbite that displays top 4 projects that I really liked and did well in from my github. This application is built with REACT.js.  
