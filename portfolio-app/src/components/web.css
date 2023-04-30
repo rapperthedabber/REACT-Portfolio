@@ -294,6 +294,94 @@ opacity: 0.6;
 	flex-direction: row;
  }
 
- #form{
+ form{
 	background-color: white;
+	display: flex;
+	flex-direction: column;
+	margin: 200px;
+	border-radius: 10px;
+	align-items: center;
+	height: 200px;
+	width: 400px;
+	
  }
+
+ @media only screen and (max-width: 600px){
+	form{
+		flex-wrap: wrap;
+		display: flex;
+		float: left;
+		height: 500px;
+		width: 200px;
+		margin-bottom: 20px;
+	}
+ }
+
+ label{
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: large;
+ }
+
+ input{
+	border: solid;
+	size: 100px;
+ }
+
+#googleDocs{
+	background-color: white;
+	font-size: large;
+	font-weight: 100;
+	color: black;
+	float: right;
+	margin-right:100px;
+	margin-bottom: 150px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#pdf{
+	
+	width: 30px;
+	height: 30px;
+	float: right;
+	flex-direction: row;
+}
+
+#languages{
+	margin-left: 100px;
+	-webkit-animation: aboutMe 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	animation: aboutMe 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+@-webkit-keyframes languages {
+	0% {
+	  -webkit-transform: scale(2);
+			  transform: scale(2);
+	  -webkit-filter: blur(4px);
+			  filter: blur(4px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	  -webkit-filter: blur(0px);
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+  }
+  @keyframes languages {
+	0% {
+	  -webkit-transform: scale(2);
+			  transform: scale(2);
+	  -webkit-filter: blur(4px);
+			  filter: blur(4px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: scale(1);
+			  transform: scale(1);
+	  -webkit-filter: blur(0px);
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+  }
